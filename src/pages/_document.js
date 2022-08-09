@@ -83,7 +83,10 @@ class MyDocument extends Document {
               analytics.page();
               }}();`,
             }}
-          ></script> */}
+          ></script> */}{
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7990399701761297"
+     crossorigin="anonymous"></script>
+          }
         </Head>
         <body>
           <Main />
