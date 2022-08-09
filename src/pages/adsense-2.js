@@ -138,7 +138,7 @@ export default function Home() {
             `,
           }}
         ></script>
-        <script data-ad-client="ca-pub-7500008582670100" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
+        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
         <link
           rel="stylesheet"
           href="https://googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css"
