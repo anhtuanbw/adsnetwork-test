@@ -195,11 +195,11 @@ export default function Home() {
               <div id="display_ads"></div>
             </Col>
             <Col className="gutter-row">
-              <p>1st creative ads</p>
+              <p>Banner </p>
               <div id="display_ads_1"></div>
             </Col>
             <Col className="gutter-row">
-            <p>3rd creative ads - adsense</p>
+            <p>Video </p>
               <div id="display_ads_2"></div>
             </Col>
             <Col className="gutter-row">
