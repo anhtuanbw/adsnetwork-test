@@ -27,18 +27,20 @@ export default function Home() {
 
         const adUnits = [
           {
-            inventoryId: 224,
+            inventoryId: 253,
             placementId: "display_ads_1",
           },
           {
-            inventoryId: 225,
+            inventoryId: 252,
             placementId: "display_ads_2",
-            options: {
-              video: {
-                player: true,
-              },
-              debug: true,
-            },
+          },
+          {
+            inventoryId: 228,
+            placementId: "display_ads_3",
+          },
+          {
+            inventoryId: 224,
+            placementId: "display_ads_4",
           },
         ];
         const res = await sdk.requestAds(adUnits);
@@ -192,47 +194,29 @@ export default function Home() {
           </Row>
           <Row gutter={30}>
             <Col className="gutter-row">
-              <div id="display_ads"></div>
-            </Col>
-            <Col className="gutter-row">
-              <p>responsive ads - banner</p>
+              <p>1st no responsive ads</p>
               <div id="display_ads_1"></div>
             </Col>
+          </Row>
+          <Row gutter={30}>
             <Col className="gutter-row">
-            <p>responsive ads - video</p>
+            <p>1st responsive ads</p>
               <div id="display_ads_2"></div>
             </Col>
+          </Row>
+          <Row gutter={30}>
             <Col className="gutter-row">
+              <p>3rd responsive ads - safe frame</p>
               <div id="display_ads_3"></div>
             </Col>
+          </Row>
+          <Row gutter={30}>
+            
             <Col className="gutter-row">
+            <p>3rd responsive-ads - no safe frame</p>
               <div id="display_ads_4"></div>
             </Col>
-            <Col className="gutter-row">
-              <div
-                id="display_ads_5"
-                style={{
-                  position: "relative",
-                  width: 700,
-                }}
-              >
-                {/* <video
-                  id="content_video"
-                  className="video-js vjs-default-skin"
-                  poster="https://googleads.github.io/videojs-ima/examples/posters/bbb_poster.jpg"
-                  controls
-                  preload="auto"
-                  width="1366"
-                  height="768"
-                  playsInline
-                >
-                  <source
-                    src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                    type="video/mp4"
-                  ></source>
-                </video> */}
-              </div>
-            </Col>
+            
           </Row>
         </Container>
       </div>
