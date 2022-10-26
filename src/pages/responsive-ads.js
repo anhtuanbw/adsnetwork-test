@@ -182,6 +182,7 @@ export default function Home() {
               <div id="aicactus-user-id"></div>
             </Col>
           </Row>
+          <hr></hr>
           <Row
             gutter={30}
             style={{
@@ -192,24 +193,28 @@ export default function Home() {
               <JsonViewer src={resJson} />
             </Col>
           </Row>
+          <hr></hr>
           <Row gutter={30}>
             <Col className="gutter-row">
               <p>1st no responsive ads</p>
               <div id="display_ads_1"></div>
             </Col>
           </Row>
+          <hr></hr>
           <Row gutter={30}>
             <Col className="gutter-row">
             <p>1st responsive ads</p>
               <div id="display_ads_2"></div>
             </Col>
           </Row>
+          <hr></hr>
           <Row gutter={30}>
             <Col className="gutter-row">
               <p>3rd responsive ads - safe frame</p>
               <div id="display_ads_3"></div>
             </Col>
           </Row>
+          <hr></hr>
           <Row gutter={30}>
             
             <Col className="gutter-row">
