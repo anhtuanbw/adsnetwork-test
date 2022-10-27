@@ -33,6 +33,12 @@ export default function Home() {
           {
             inventoryId: 255,
             placementId: "display_ads_2",
+            options: {
+              video: {
+                player: true,
+              },
+              debug: true,
+            },
           }
           
         ];
