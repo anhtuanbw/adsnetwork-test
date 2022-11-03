@@ -29,6 +29,10 @@ export default function Home() {
           {
             inventoryId: 250,
             placementId: "display_ads_1",
+          },
+          {
+            inventoryId: 258,
+            placementId: "display_ads_2",
           }
         ];
         const res = await sdk.requestAds(adUnits);
@@ -185,11 +189,11 @@ export default function Home() {
               <div id="display_ads"></div>
             </Col>
             <Col className="gutter-row">
-              <p>3P creative ads</p>
+              <p>3P creative ads - No Safe Frame</p>
               <div id="display_ads_1"></div>
             </Col>
             <Col className="gutter-row">
-            <p></p>
+            <p>3P creative ads -  Safe Frame</p>
               <div id="display_ads_2"></div>
             </Col>
             <Col className="gutter-row">
