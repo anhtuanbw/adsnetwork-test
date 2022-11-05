@@ -27,7 +27,7 @@ export default function Home() {
 
         const adUnits = [
           {
-            inventoryId: 252,
+            inventoryId: 262,
             placementId: "display_ads_1",
           },
           {
