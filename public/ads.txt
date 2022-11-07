@@ -1,0 +1,5 @@
+#Adsense
+google.com, pub-7500008582670100, DIRECT, f08c47fec0942fa0
+
+#MGID
+mgid.com, 670053, DIRECT, d4c29acad76ce94f
