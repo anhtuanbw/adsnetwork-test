@@ -30,17 +30,17 @@ export default function Home() {
             inventoryId: 274,
             placementId: "display_ads_1",
           }
-          // ,
-          // {
-          //   inventoryId: 272,
-          //   placementId: "display_ads_5",
-          //   options: {
-          //     video: {
-          //       player: true,
-          //     },
-          //     debug: true,
-          //   },
-          // },
+          ,
+          {
+            inventoryId: 275,
+            placementId: "display_ads_5",
+            options: {
+              video: {
+                player: true,
+              },
+              debug: true,
+            },
+          },
         ];
         const res = await sdk.requestAds(adUnits);
 
