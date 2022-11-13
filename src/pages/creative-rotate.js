@@ -37,6 +37,7 @@ export default function Home() {
             options: {
               video: {
                 player: true,
+                loop: true
               },
               debug: true,
             },
