@@ -22,56 +22,28 @@ export default function Home() {
 
   React.useEffect(() => {
     window.addEventListener("load", async () => {
-      if (window.AicactusSDK) {
-        const sdk = window.AicactusSDK || {};
+      if (window.AiactivSDK) {
+        const sdk = window.AiactivSDK || {};
 
         const adUnits = [
           {
-            inventoryId: 1659,
-            placementId: "display_ads",
-            options: {
-              context: {
-                page: {
-                  category: "",
-                  keywords: "abcb",
-                  description: "",
-                },
-              },
-            },
+            inventoryId: 388,
+            placementId: "display_ads_1",
           },
-          // {
-          //   inventoryId: 2,
-          //   placementId: "display_ads_1",
-          //   options: {
-          //     video: {
-          //       player: true,
-          //       preventPauseWhenClick: false,
-          //     },
-          //     debug: true,
-          //   },
-          // },
-          // {
-          //   inventoryId: 8,
-          //   placementId: "display_ads_2",
-          // },
-          // {
-          //   inventoryId: 9,
-          //   placementId: "display_ads_3",
-          // },
-          // {
-          //   inventoryId: 10,
-          //   placementId: "display_ads_4",
-          // },
           {
-            inventoryId: 20,
-            placementId: "display_ads_5",
+            inventoryId: 389,
+            placementId: "display_ads_2",
+          },
+          {
+            inventoryId: 390,
+            placementId: "display_ads_3",
             options: {
               video: {
                 player: true,
               },
               debug: true,
             },
-          },
+          }
         ];
         const res = await sdk.requestAds(adUnits);
 
@@ -167,16 +139,16 @@ export default function Home() {
         <script
           type="text/javascript"
           dangerouslySetInnerHTML={{
-            __html: `window.AicactusSDK||(window.AicactusSDK={}),AicactusSDK.load=function(a){var b=document.createElement("script");b.async=!0,b.type="text/javascript",b.src="${
+            __html: `window.AiactivSDK||(window.AiactivSDK={}),AiactivSDK.load=function(a){var b=document.createElement("script");b.async=!0,b.type="text/javascript",b.src="${
               process.env.NODE_ENV === "development"
                 ? "https://localhost:9081/aicactus-sdk.development.min.js"
-                : "https://cdn.aicactus.io/aicactus-sdk.staging.min.js"
-            }",b.addEventListener?b.addEventListener("load",function(b){"function"==typeof a&&a(b)},!1):b.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&a(window.event)};let c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)},AicactusSDK.load( function(){AicactusSDK.initialize({containerId:"b8a3ccf2-5d49-4912-b2cc-87dc46e10277@web", type: ["adnetwork", "dmp"], debug: true}),AicactusSDK.callMethodsFromContainer();
+                : "https://sdk-cdn.aiactiv.io/aiactiv-sdk.test.min.js"
+            }",b.addEventListener?b.addEventListener("load",function(b){"function"==typeof a&&a(b)},!1):b.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&a(window.event)};let c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)},AiactivSDK.load( function(){AiactivSDK.initialize({containerId:"c1e9eec0-75cf-4fe6-a231-98c5bc5e6c8a@web", type: ["adnetwork", "dmp"], debug: true}),AiactivSDK.callMethodsFromContainer();
             });
             `,
           }}
         ></script>
-
+        <script data-ad-client="ca-pub-7500008582670100" async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" data-checked-head="true"></script>
         <link
           rel="stylesheet"
           href="https://googleads.github.io/videojs-ima/node_modules/video.js/dist/video-js.min.css"
@@ -227,9 +199,11 @@ export default function Home() {
               <div id="display_ads"></div>
             </Col>
             <Col className="gutter-row">
+              <p>Banner </p>
               <div id="display_ads_1"></div>
             </Col>
             <Col className="gutter-row">
+            <p>Video </p>
               <div id="display_ads_2"></div>
             </Col>
             <Col className="gutter-row">
