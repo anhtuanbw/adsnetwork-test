@@ -192,11 +192,10 @@ export default function Home() {
               <JsonViewer src={resJson} />
             </Col>
           </Row>
-          <Row gutter={30}>
-              <p>Banner </p>
-              <div id="display_ads_1"></div>
 
-          </Row>
+          <p>Banner </p>
+          <div id="display_ads_1"></div>
+
         </Container>
       </div>
     </LayoutOne>
