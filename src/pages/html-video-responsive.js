@@ -200,42 +200,6 @@ export default function Home() {
               <p>Banner </p>
               <div id="display_ads_1"></div>
             </Col>
-            <Col className="gutter-row">
-            
-              <div id="display_ads_2"></div>
-            </Col>
-            <Col className="gutter-row">
-            <p>Video </p>
-              <div id="display_ads_3"></div>
-            </Col>
-            <Col className="gutter-row">
-              <div id="display_ads_4"></div>
-            </Col>
-            <Col className="gutter-row">
-              <div
-                id="display_ads_5"
-                style={{
-                  position: "relative",
-                  width: 700,
-                }}
-              >
-                {/* <video
-                  id="content_video"
-                  className="video-js vjs-default-skin"
-                  poster="https://googleads.github.io/videojs-ima/examples/posters/bbb_poster.jpg"
-                  controls
-                  preload="auto"
-                  width="1366"
-                  height="768"
-                  playsInline
-                >
-                  <source
-                    src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-                    type="video/mp4"
-                  ></source>
-                </video> */}
-              </div>
-            </Col>
           </Row>
         </Container>
       </div>
