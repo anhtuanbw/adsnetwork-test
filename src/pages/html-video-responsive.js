@@ -193,13 +193,9 @@ export default function Home() {
             </Col>
           </Row>
           <Row gutter={30}>
-            <Col className="gutter-row">
-              <div id="display_ads"></div>
-            </Col>
-            <Col className="gutter-row">
               <p>Banner </p>
               <div id="display_ads_1"></div>
-            </Col>
+
           </Row>
         </Container>
       </div>
