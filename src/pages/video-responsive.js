@@ -194,9 +194,45 @@ export default function Home() {
           </Row>
           <hr></hr>
           <p>Video no responsive ads</p>
-          <Row>
+          {/* <Row gutter={30}>
             <Col className="gutter-row">
-
+              <div id="display_ads_2"></div>
+            </Col>
+          </Row> */}
+        </Container>
+         <Container type={'fluid'}>
+          <Row
+            gutter={30}
+            style={{
+              marginBottom: 40,
+            }}
+          >
+            <Col className="gutter-row" xs={24}>
+              {navigator.userAgent}
+            </Col>
+          </Row>
+          <Row>
+            <Col className="gutter-row" xs={24}>
+              <div id="aicactus-user-id"></div>
+            </Col>
+          </Row>
+          <hr></hr>
+          <Row>
+            <Col className="gutter-row" xs={24}>
+              <JsonViewer src={resJson} />
+            </Col>
+          </Row>
+          <hr></hr>
+          <p>Video responsive ads</p>
+          <Row gutter={30}>
+            <Col className="gutter-row">
+              <div id="display_ads_1"></div>
+            </Col>
+          </Row>
+          <hr></hr>
+          <p>Video no responsive ads</p>
+          <Row gutter={30} style={{width: "100%", overflow: "hidden"}}>
+            <Col className="gutter-row">
               <div id="display_ads_2"></div>
             </Col>
           </Row>
