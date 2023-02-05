@@ -188,16 +188,16 @@ export default function Home() {
             </Col>
           </Row>
           <hr></hr>
-          <Row gutter={30}>
           <p>Video responsive ads</p>
+          <Row>
             <Col className="gutter-row">
 
               <div id="display_ads_1"></div>
             </Col>
           </Row>
           <hr></hr>
-          <Row gutter={30}>
           <p>Video no responsive ads</p>
+          <Row>
             <Col className="gutter-row">
 
               <div id="display_ads_2"></div>
