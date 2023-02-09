@@ -24,7 +24,6 @@ export default function Home() {
     window.addEventListener('load', async () => {
       if (window.AiactivSDK) {
         const sdk = window.AiactivSDK || {};
-
         const adUnits = [
           {
             inventoryId: 463,
@@ -188,7 +187,7 @@ export default function Home() {
           <hr></hr>
           <p>Video responsive ads</p>
           <Row gutter={30}>
-            <Col className="gutter-row">
+            <Col className="gutter-row" style={{width: "100%"}}>
               <div id="display_ads_1"></div>
             </Col>
           </Row>
