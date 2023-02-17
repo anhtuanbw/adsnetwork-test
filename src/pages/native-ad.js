@@ -28,7 +28,7 @@ export default function Home() {
         const sdk = window.AiactivSDK || {};
         const adUnits = [
           {
-            inventoryId: 508,
+            inventoryId: 523,
             placementId: 'display_ads_1',
           },
         ];
