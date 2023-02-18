@@ -98,13 +98,21 @@ export default function Home() {
               <JsonViewer src={resJson} />
             </Col>
           </Row>
-          <Divider  orientation="left" plain>Native Ad</Divider>
+          <Divider plain>Native Ad</Divider>
           <Row gutter={30}>
-            <Col className="gutter-row">
+            <Divider orientation="left" plain>
+              Template 1
+            </Divider>
+            <Col className="gutter-row" xs={24}>
               <div id="display_ads_1"></div>
-              <div>
-                <NativeAd nativeObj={nativeAd} />
-              </div>
+            </Col>
+          </Row>
+          <Row gutter={30}>
+            <Divider orientation="left" plain>
+              No template
+            </Divider>
+            <Col className="gutter-row" xs={24}>
+              <NativeAd nativeObj={nativeAd} />
             </Col>
           </Row>
         </Container>
