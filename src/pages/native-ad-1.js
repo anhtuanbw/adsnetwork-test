@@ -32,9 +32,9 @@ export default function Home() {
             placementId: 'display_ads_1',
             options: {
               native: {
-                template_id: "template-1"
-              }
-            }
+                template_id: 'template-2',
+              },
+            },
           },
         ];
         const res = await sdk.requestAds(adUnits);
@@ -106,9 +106,9 @@ export default function Home() {
           <Divider plain>Native Ad</Divider>
           <Row gutter={30}>
             <Divider orientation="left" plain>
-              Template 1
+              Template 2
             </Divider>
-            <Col className="gutter-row" xs={12}>
+            <Col className="gutter-row" xs={18}>
               <div id="display_ads_1"></div>
             </Col>
           </Row>
