@@ -103,7 +103,7 @@ export default function Home() {
             <Divider orientation="left" plain>
               Template 1
             </Divider>
-            <Col className="gutter-row" xs={24}>
+            <Col className="gutter-row" xs={12}>
               <div id="display_ads_1"></div>
             </Col>
           </Row>
