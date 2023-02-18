@@ -1,4 +1,4 @@
-import { Col, Row } from 'antd';
+import { Col, Row, Divider } from 'antd';
 import _ from 'lodash';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -92,14 +92,13 @@ export default function Home() {
               <div id="aicactus-user-id"></div>
             </Col>
           </Row>
-          <hr></hr>
+          <Divider />
           <Row>
             <Col className="gutter-row" xs={24}>
               <JsonViewer src={resJson} />
             </Col>
           </Row>
-          <hr></hr>
-          <p>Native Ad</p>
+          <Divider  orientation="left" plain>Native Ad</Divider>
           <Row gutter={30}>
             <Col className="gutter-row">
               <div id="display_ads_1"></div>
