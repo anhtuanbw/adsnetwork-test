@@ -29,12 +29,7 @@ export default function Home() {
         const adUnits = [
           {
             inventoryId: 523,
-            placementId: 'display_ads_1',
-            options: {
-              native: {
-                template_id: 'template-2',
-              },
-            },
+            placementId: 'display_ads_1'
           },
         ];
         const res = await sdk.requestAds(adUnits);
