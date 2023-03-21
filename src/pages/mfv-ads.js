@@ -28,7 +28,7 @@ export default function Home() {
         const adUnits = [
           {
             inventoryId: 386,
-            placementId: "display_ads_1",
+            placementId: "display_ads_mfv",
           }
         ];
         const res = await sdk.requestAds(adUnits);
@@ -127,7 +127,7 @@ export default function Home() {
           dangerouslySetInnerHTML={{
             __html: `window.AiactivSDK||(window.AiactivSDK={}),AiactivSDK.load=function(a){var b=document.createElement("script");b.async=!0,b.type="text/javascript",b.src="${
               process.env.NODE_ENV === "development"
-                ? "https://localhost:9081/aicactus-sdk.development.min.js"
+                ? "http://localhost:9081/aiactiv-sdk.development.min.js"
                 : "https://sdk-cdn.aiactiv.io/aiactiv-sdk.test.min.js"
             }",b.addEventListener?b.addEventListener("load",function(b){"function"==typeof a&&a(b)},!1):b.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&a(window.event)};let c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)},AiactivSDK.load( function(){AiactivSDK.initialize({containerId:"c1e9eec0-75cf-4fe6-a231-98c5bc5e6c8a@web", type: ["adnetwork", "dmp"], debug: true}),AiactivSDK.callMethodsFromContainer();
             });
@@ -180,13 +180,14 @@ export default function Home() {
               <JsonViewer src={resJson} />
             </Col>
           </Row>
+          <div style={{height: 3000}}></div>
           <Row gutter={30}>
             <Col className="gutter-row">
               <div id="display_ads"></div>
             </Col>
             <Col className="gutter-row">
               <p>Banner </p>
-              <div id="display_ads_1"></div>
+              <div id="display_ads_mfv"></div>
             </Col>
             <Col className="gutter-row">
             <p>Video </p>
