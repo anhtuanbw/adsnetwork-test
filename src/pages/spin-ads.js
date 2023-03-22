@@ -180,6 +180,7 @@ export default function Home() {
               <JsonViewer src={resJson} />
             </Col>
           </Row>
+          <div style={{height: 3000}}></div>
           <Row gutter={30}>
             <Col className="gutter-row">
               <div id="display_ads"></div>
