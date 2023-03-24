@@ -27,11 +27,11 @@ export default function Home() {
 
         const adUnits = [
           {
-            inventoryId: 611,
+            inventoryId: 612,
             placementId: "display_ads_1",
           },
           {
-            inventoryId: 612,
+            inventoryId: 611,
             placementId: "display_ads_3",
             options: {
               video: {
@@ -198,10 +198,7 @@ export default function Home() {
               <p>Banner </p>
               <div id="display_ads_1"></div>
             </Col>
-            <Col className="gutter-row">
-            <p>Video </p>
-              <div id="display_ads_2"></div>
-            </Col>
+
             <Col className="gutter-row">
               <div id="display_ads_3"></div>
             </Col>
@@ -232,6 +229,13 @@ export default function Home() {
                   ></source>
                 </video> */}
               </div>
+            </Col>
+          </Row>
+          <br></br>
+          <Row>
+          <Col className="gutter-row">
+            <p>Video </p>
+              <div id="display_ads_2"></div>
             </Col>
           </Row>
         </Container>
