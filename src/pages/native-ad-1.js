@@ -28,11 +28,11 @@ export default function Home() {
         const sdk = window.AiactivSDK || {};
         const adUnits = [
           {
-            inventoryId: 523,
+            inventoryId: 411,
             placementId: 'display_ads_1',
             options: {
               native: {
-                template_id: 'template-2',
+                template_id: 'template-1',
               },
             },
           },
