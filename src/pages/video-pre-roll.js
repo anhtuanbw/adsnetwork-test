@@ -97,7 +97,7 @@ export default function Home() {
                 id={VIDEO_ID}
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/nqye02H_H6I"
+                src="https://www.youtube.com/embed/nqye02H_H6I?enablejsapi=1"
                 title="YouTube video player"
                 frameBorder="0"
                 allowFullScreen
