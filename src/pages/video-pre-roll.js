@@ -29,7 +29,7 @@ export default function Home() {
         const adUnits = [
           {
             inventoryId: 990,
-            placementId: 'display_ads_1',
+            placementId: VIDEO_ID,
             options: {
               video: {
                 player: true,
@@ -97,7 +97,7 @@ export default function Home() {
                 id={VIDEO_ID}
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/nqye02H_H6I?enablejsapi=1"
+                src="https://www.youtube.com/embed/nqye02H_H6I"
                 title="YouTube video player"
                 frameBorder="0"
                 allowFullScreen
