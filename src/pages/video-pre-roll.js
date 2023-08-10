@@ -26,6 +26,11 @@ export default function Home() {
     window.addEventListener('load', async () => {
       if (window.AiactivSDK) {
         const sdk = window.AiactivSDK || {};
+        console.log("======= SDK call");
+        sdk.track('Test aid', {
+          title: 'How to Create a Tracking Plan',
+          course: 'Intro to Analytics',
+        });
         const adUnits = [
           {
             inventoryId: 990,
@@ -60,7 +65,7 @@ export default function Home() {
               process.env.NODE_ENV === 'development'
                 ? 'http://localhost:9081/aiactiv-sdk.development.min.js'
                 : 'https://sdk-cdn.aiactiv.io/aiactiv-sdk.test.min.js'
-            }",b.addEventListener?b.addEventListener("load",function(b){"function"==typeof a&&a(b)},!1):b.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&a(window.event)};let c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)},AiactivSDK.load( function(){AiactivSDK.initialize({containerId:"8aff59d2-f161-41d3-bc2c-ebd52a09e4ba@web", type: ["adnetwork"], debug: true}),AiactivSDK.callMethodsFromContainer();
+            }",b.addEventListener?b.addEventListener("load",function(b){"function"==typeof a&&a(b)},!1):b.onreadystatechange=function(){("complete"==this.readyState||"loaded"==this.readyState)&&a(window.event)};let c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)},AiactivSDK.load( function(){AiactivSDK.initialize({containerId:"8aff59d2-f161-41d3-bc2c-ebd52a09e4ba@web", type: ["adnetwork, dmp"], debug: true}),AiactivSDK.callMethodsFromContainer();
             });
             `,
           }}
